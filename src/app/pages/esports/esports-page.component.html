@@ -1,1 +1,13 @@
-<p>esports-page works!</p>,
+<section
+  class="min-h-[calc(100vh-64px-68px)] px-8 py-4 w-full flex justify-center"
+>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center">
+    @for (esport of esports; track esport.name) {
+    <esport-card
+      [name]="esport.name"
+      [image]="esport.image"
+      [description]="esport.description"
+    ></esport-card>
+  }
+  </div>
+</section>
