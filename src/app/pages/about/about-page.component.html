@@ -1,0 +1,10 @@
+<section>
+  @for (section of aboutSections; track section.title) {
+    <about-section
+      [title]="section.title"
+      [message]="section.message"
+      [image]="section.image"
+      [backgroundColor]="section.backgroundColor"
+    />
+  }
+</section>
